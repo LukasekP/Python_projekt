@@ -14,8 +14,7 @@ class PDF(FPDF):
 def display_menu():
     print("Digitální Deník")
     print("1. Přidat záznam")
-    print("2. Zobrazit všechny záznamy")
-    print("3. Konec")
+    print("2. Konec")
 
 def add_entry(pdf):
     print("Zadejte svůj záznam:")
@@ -42,9 +41,6 @@ def main():
         if choice == '1':
             add_entry(pdf)
         elif choice == '2':
-            pdf.output(pdf_file_name)
-            view_entries(pdf_file_name)
-        elif choice == '3':
             pdf.output(pdf_file_name)
             print("Ukončuji program.")
             break
