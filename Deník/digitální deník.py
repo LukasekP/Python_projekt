@@ -48,7 +48,7 @@ root.geometry("500x400")
 # Setup text widget for journal entry input
 entry_text = tk.Text(root, height=10, width=50)
 entry_text.pack(pady=10)
-
+#ddd
 # Setup frame for buttons
 button_frame = tk.Frame(root)
 button_frame.pack(pady=10)
